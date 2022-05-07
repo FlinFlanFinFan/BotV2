@@ -245,12 +245,17 @@ async function paint(xx, yy, cc) {
     console.log('Bot painted at %s,%s, C: %s', xx, yy, cc)
     let title = 'bot | x: '+xx+', y: '+yy+' c:'+cc
 
-    setTimeout(() => { document.title = title+' | 5s'},0)
-    setTimeout(() => { document.title = title+' | 4s'},1000)
-    setTimeout(() => { document.title = title+' | 3s'},2000)
-    setTimeout(() => { document.title = title+' | 2s'},3000)
-    setTimeout(() => { document.title = title+' | 1s'},4000)
-    setTimeout(() => { document.title = title+' | 0s'},5000)
+    setTimeout(() => { document.title = title+' | 10s'},0)
+    setTimeout(() => { document.title = title+' | 9s'},1000)
+    setTimeout(() => { document.title = title+' | 8s'},2000)
+    setTimeout(() => { document.title = title+' | 7s'},3000)
+    setTimeout(() => { document.title = title+' | 6s'},4000)
+    setTimeout(() => { document.title = title+' | 5s'},5000)
+    setTimeout(() => { document.title = title+' | 4s'},6000)
+    setTimeout(() => { document.title = title+' | 3s'},7000)
+    setTimeout(() => { document.title = title+' | 2s'},8000)
+    setTimeout(() => { document.title = title+' | 1s'},9000)
+    setTimeout(() => { document.title = title+' | 0s'},10000)
     } catch (e) {};
 }
 
@@ -268,7 +273,7 @@ async function pastee() {
             if (clr[0] == clr2[0] & clr[1] == clr2[1] && clr[2] == clr2[2] || clr[3] != 255 || c == null) continue;
 
             paint(x + Number(xx.value), y + Number(yy.value), c);
-            await sleep(5000)
+            await sleep(10000)
         }
     }
 }
