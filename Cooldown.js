@@ -1,1 +1,0 @@
-localStorage.vip=prompt()
